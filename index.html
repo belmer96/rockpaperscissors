@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="main.js" defer></script>
+    <title>RPS</title>
 </head>
 <body class="body">
 <header class="header">
     <h1>ROCK PAPER SCISSORS</h1>
 
 </header>
-<div class="results">
+<div class="results" id="results">
     <div class="weapon">Choose your weapon</div>
     <div class="rules">First to score 5 points wins the game</div>
 
@@ -22,33 +23,44 @@
         <div class="tile1"></div>
         <div class="textcontainer">
             <div class="text">Player:</div>
-            <div class="playerscore">0</div>
+            <div class="playerscore" id="playerscore">0</div>
         </div>
     </div>
     <div class="column">
         <div class="tile2"></div>
         <div class="textcontainer">
             <div class="text">Computer:</div>
-            <div class="Computerscore">0</div>
+            <div class="Computerscore" id="computerscore">0</div>
         </div>
     </div>
 </div>
     <div class="buttons">
-        <button class="rock">
+        <button class="rock" id="rock">
             <div class="rockimg"></div>
         </button>
-        <button class="paper">
+        <button class="paper" id="paper">
             <div class="paperimg"></div>
         </button>
-        <button class="scissors">
+        <button class="scissors" id="scissors">
             <div class="scissorsimg"></div>
         </button>
     </div>
+    <div id="overlaycontainer">
+        <div id="overlay">
+        <button id="closebutton">Play again</button> 
+        <audio id="audio" src="images/numa.mp3"></audio>
+        <audio id="audio2" src="images/SCREAM.mp3"></audio>
+        </div>
+
+    </div>
+   
+    <!-- <div style="width:480px"><iframe allow="fullscreen" frameBorder="0" height="360" src="https://giphy.com/embed/blCO4dKZUiAL7YRJ5E/video" width="480"></iframe></div>
+    <iframe src="https://giphy.com/embed/kh8ePQvhzWL5e" width="480" height="361" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nostalgia-numa-kh8ePQvhzWL5e">via GIPHY</a></p> -->
 
 
 
 
-<script src="main.js"></script>
     
 </body>
+<!-- <script src="main.js"></script> -->
 </html>

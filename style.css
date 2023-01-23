@@ -133,3 +133,49 @@
     height: 100px;
     width: 100px;
   }
+  #overlaycontainer {
+    display: flex;
+    /* display: none; */
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  #overlay {
+    display: none; 
+    display: flex;
+    width: 400px; 
+    height: 300px; 
+    background-color: black;
+    /* background-image: url('images/numa.gif'); */
+    /* background-image: url('images/pctrash.gif'); */
+    background-size: cover;
+    z-index: 999; 
+    position: absolute;
+    cursor: pointer; 
+  }
+
+  #closecontainer{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-end;
+    /* align-self: center; */
+    
+  }
+
+  #closebutton{
+    position: absolute;
+    bottom:10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+  }
